@@ -4,6 +4,7 @@ import { baseUrl } from '../../const/const';
 export const updateDesk = createAsyncThunk(
     'desks/updateDesk',
     async (data, thunkAPI) => {
+        console.log(data);
         try {
             const response = await fetch(`${baseUrl}desks/${data.deskId}`, {
                 headers: {

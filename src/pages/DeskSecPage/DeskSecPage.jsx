@@ -60,14 +60,14 @@ export const DeskSecPage = () => {
         };
     }, [username]);
 
-    useLayoutEffect(() => {
-        return () => {
-            if (stageRef.current) {
-                const uri = stageRef.current.toDataURL();
-                dispatch(updateDesk({ deskId: deskId, field: deskFields.thumbnailUrl, value: uri }));
-            }
-        };
-    }, []);
+    // useLayoutEffect(() => {
+    //     return () => {
+    //         if (stageRef.current) {
+    //             const uri = stageRef.current.toDataURL();
+    //             dispatch(updateDesk({ deskId: deskId, field: deskFields.thumbnailUrl, value: uri }));
+    //         }
+    //     };
+    // }, []);
 
     const drawHandler = (serverMessage) => {
         switch (serverMessage.figure.type) {
