@@ -1,0 +1,71 @@
+.header {
+    height: 70px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.subRow {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.btnBack {
+    flex: 1 0 auto;
+    cursor: pointer;
+
+    .icon {
+        margin-right: 3px;
+
+        path {
+            fill: #333333;
+        }
+    }
+
+    &:hover {
+        color: orange;
+
+        path {
+            fill: orange;
+        }
+    }
+}
+
+.createWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+
+    p {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #97958F;
+    }
+
+    .icon {
+        width: 15px;
+        height: 15px;
+
+        path {
+            fill: #97958F;
+        }
+    }
+
+    &:hover {
+        p {
+            color: orange;
+        }
+        path {
+            stroke: orange;
+        }
+    }
+}
